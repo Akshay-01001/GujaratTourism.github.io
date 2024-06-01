@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    overflow-y: hidden;
+}
+
+/* ---------------------------Home------------------------------ */
+
+#home {
+    width: 100%;
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/main.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80% 100%;
+}
+
+#home h2 {
+    font-family: 'Charmonman', cursive;
+    font-size: 64px;
+    margin-top: 140px;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px;
+    padding: 50px;
+    width: 420px;
+    background: rgba(226, 225, 225,0.2); */
+}
+
+/* ---------------------------------------------------------- */
+
+#content .box {
+    font-family: 'Cairo', sans-serif;
+    /* text-align: center; */
+    overflow: hidden;
+    position: relative;
+}
+
+#content .col-md-4 {
+    cursor: pointer;
+}
+
+#content .box img {
+    width: 100%;
+    height: 350px;
+    transform-origin: bottom center;
+    transform: perspective(500px) rotateX(0);
+    transition: all 0.5s ease 0s;
+}
+
+#content .box:hover img {
+    transform: perspective(500px) rotateX(50deg);
+}
+
+#content .box .box-content {
+    color: #fff;
+    background: linear-gradient(to right, rgba(248, 149, 68, 0.849), rgba(230, 161, 122, 0.8));
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: top center;
+    transform: perspective(500px) rotateX(-50deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+#content .box:hover .box-content {
+    opacity: 1;
+    transform: perspective(500px) rotateX(0);
+}
+
+#content .box .content {
+    width: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#content .box h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 0 1px;
+    /* font-family: 'Poppins' */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#content .box p {
+    color: black;
+}
+
+/* ----------------------------------------- */
+#pollo h1 {
+    overflow-y: hidden;
+}
+
+#pollo {
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/pic-2.jpg) no-repeat transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-bottom: 40px; */
+}
+
+#pollo h1 {
+    font-size: 60px;
+}
+
+#pollo .title {
+    color: #fff;
+    float: right;
+    margin-top: 100px;
+}
+
+#pollo .btn {
+    color: #fff;
+    background: rgba(230, 78, 23, 0.5);
+    padding: 8px 30px;
+}
+
+#pollo .btn a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#pollo button img {
+    padding-bottom: 3px;
+}
+
+#pollo button:hover {
+    background: orangered;
+}
+
+/* ----------------------visit------------------------ */
+
+#visit h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+#visit img {
+    border-radius: 10px;
+    height: 60%;
+}
+
+.box {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.box:before,
+.box:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.35s 0s ease-out;
+}
+
+.box:hover:before {
+    bottom: 0;
+}
+
+.box:after {
+    opacity: 0.8;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.35s 0.2s ease-in;
+}
+
+.box:hover:after {
+    top: 25%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .box-content {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-55%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transition: all 0.35s 0.5s ease;
+}
+
+.box:hover .box-content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%);
+}
+
+.box .title {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.box .title:after {
+    content: '';
+    height: 1px;
+    width: 100px;
+    margin: 5px auto 3px;
+    /* border-bottom: 1px dashed #fff; */
+    display: block;
+    clear: both;
+}
+
+.box .post {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* ------------------------business------------------------- */
+
+#business .shope-local-right {
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 9px;
+    background: rgb(53, 50, 50);
+    color: white;
+    float: right;
+    padding-left: 400px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+
+
+}
+
+#business .shope-local-right h2 p {
+    float: right;
+    margin-left: 100px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+#business .shope-local-left img {
+    width: 26%;
+    height: 420px;
+    background-size: cover;
+    float: left;
+    border-radius: 9px;
+    position: absolute;
+    float: left;
+    margin-top: 42px;
+}
+
+/* --------------------------contact--------------------------- */
+
+#contact .box img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact .fab {
+    font-size: 40px;
+}
+
+#contact .box-content {
+    color: rgb(248, 113, 64);
+}
+
+#footer {
+    background: rgb(241, 130, 90);
+    height: 70px;
+}
+
+#footer h5 {
+    color: white;
+    padding-top: 20px;
+}
+
+#footer h5 a {
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+#footer h5 a:hover {
+    color: #017c8b;
+}
+
+@media (max-width:870px) {
+    #business .shope-local-left img {
+        width: 100%;
+        position: relative;
+
+    }
+
+    #business .shope-local-right {
+        width: 100%;
+        height: 650px;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 9px;
+        background: rgb(53, 50, 50);
+        color: white;
+        margin-top: 40px;
+    }
+
+    #business .shope-local-right h2 p {
+
+
+        display: block;
+        box-sizing: border-box;
+        line-height: 1.2;
+    }
+
+}

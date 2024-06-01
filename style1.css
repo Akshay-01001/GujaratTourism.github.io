@@ -1,0 +1,117 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#about_gujarat_div{
+    height: 425px;
+    width: 100%;
+    background-image: url(images/about1.jpeg);
+    
+}
+#about_gujarat_div_id{
+    color: white !important;
+    text-align: center;
+    padding-top: 20px;
+}
+#table_main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#table_main_1{
+    height: 100%;
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    border: 9px solid black;
+}
+#Feedback_and_suggestion_div{
+    height: 350px;
+    width: 100%;
+    background-image: url(images/common-banner.jpg);
+}
+#Feedback_and_suggestion_div img{
+    float: right;
+}
+#Feedback_and_suggestion_div_id{
+    padding: 50px;
+    color: white !important;   
+}
+
+#form_body {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width:100%;
+    margin-left: 3px;
+    }
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+
+.card{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#Contact_us_div{
+    height: 350px;
+    width: 100%;
+    background-image: url(images/common-banner.jpeg);
+}
+#Contact_us_div img{
+    float: right;
+}
+#Contact_us_div_id{
+    color: aliceblue !important;
+    padding: 50px;
+}
+#Disclamer_div{
+    height: 350px;
+    width: 100%;
+    background-image: url(images/common.jpg);
+}
+#Disclamer_div img{
+    float: right;
+
+}
+#Disclamer_div_id{
+    color: black !important;
+}
+#To_begin_div{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    
+}
+#To_begin_div_id{
+    height: 100%;
+    width: 33%;
+}
+#gandhinagar_hover img:hover{
+    filter: brightness(100%);
+    transition: 2s;
+    scale: 1.1;
+}
+#gandhinagar{
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Gandhinagar_pic{
+    height: 300px;
+    width: 30%;
+    padding: 25px;
+}
